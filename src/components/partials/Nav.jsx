@@ -6,7 +6,7 @@ import logoIcon from '../../images/icons/DanielPortfolio-logo.png';
 const StyledNav = styled.div`
     position: fixed;
     z-index: 2;
-    height: 70px;
+    height: 80px;
     width: 100%;
     background-color: #212121;
     display: grid;
