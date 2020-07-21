@@ -9,16 +9,14 @@ const StyledNav = styled.div`
     height: 80px;
     width: 100%;
     background-color: #212121;
-    display: grid;
-    grid-template-columns: 4% 60% 1fr 4%;
+    display: flex;
 `
 const PageLogoContainer = styled.div`
     position: relative;
-    grid-column: 2/3;
     height: 100%;
-    width: 100%;
     display: flex;
     align-items: center;
+    margin-left: 40px;
 `
 
 const LogoIcon = styled.img`
@@ -27,16 +25,17 @@ const LogoIcon = styled.img`
 `
 
 const PageTitlesContainer = styled.div`
-    position: relative;
+    position: absolute;
+    right:0;
     height: 100%;
-    width: 100%;
-    grid-column: 3/4;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-right: 40px;
 `
 
 const PageTitle = styled.a`
+    margin: 0 0 0 60px;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
@@ -49,6 +48,7 @@ const PageTitle = styled.a`
 `
 
 const ResumeButton = styled.div`
+    margin: 0 0 0 60px;
     display: flex;
     align-items: flex-end;
     opacity: 0.5;

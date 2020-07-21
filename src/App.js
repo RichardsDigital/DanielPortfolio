@@ -11,6 +11,9 @@ const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
+    :focus {
+    outline: none;
+    }
   };
 `
 
@@ -20,11 +23,12 @@ function App() {
       <GlobalStyle />
 
         <Nav/>
+        <Footer/>
+        
         <Home/>
         {/* <About/> */}
         {/* <Work/> */}
         {/* <Contact/> */}
-        {/* <Footer/> */}
     </div>
   );
 }
