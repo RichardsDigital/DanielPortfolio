@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import purpleBullet from '../../images/icons/pBullet';
+import blueBullet from '../../images/icons/bBullet';
+import greenBullet from '../../images/icons/gBullet';
+
 
 const AboutSection = styled.section`
     position: relative;
