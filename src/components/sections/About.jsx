@@ -58,6 +58,50 @@ const Paragraph = styled.p`
     text-align: center;
 `
 
+const SkillBoxContainer = styled.div`
+    background-color: #1C1C1C;
+    border-radius: 8px;
+`
+
+const InnerSkillBoxContainer = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr 1px 1fr;
+`
+const SkillBox = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding: 70px 100px;
+`
+const SkillHeader = styled.div`
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+`
+const SkillBullet = styled.div`
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+`
+const SkillBulletImage = styled.img`
+    height: 12px;
+    width: auto;
+    margin-right: 12px;
+`
+const SkillBulletText = styled.p`
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: white;
+`
+const SplitLine = styled.div`
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    align-self: center;
+`
+
 const About = () => {
     return (
         <AboutSection>
@@ -80,6 +124,57 @@ const About = () => {
                     sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </Paragraph>
                 </DescriptionContainer>
+                <SkillBoxContainer>
+                    <InnerSkillBoxContainer>
+                        <SkillBox style={{gridColumn: '1/2'}}>
+                            <SkillHeader style={{color: '#6F5CB7'}}>UI Design</SkillHeader>
+                            <SkillBullet>
+                                <SkillBulletImage src={purpleBullet}/>
+                                <SkillBulletText>Adobe XD</SkillBulletText>
+                            </SkillBullet>
+                            <SkillBullet>
+                                <SkillBulletImage src={purpleBullet}/>
+                                <SkillBulletText>Adobe Illustrator</SkillBulletText>
+                            </SkillBullet>
+                            <SkillBullet>
+                                <SkillBulletImage src={purpleBullet}/>
+                                <SkillBulletText>Adobe Photoshop</SkillBulletText>
+                            </SkillBullet>
+                        </SkillBox>
+                        <SplitLine style={{gridColumn: '2/3'}}/>
+                        <SkillBox style={{gridColumn: '3/4'}}>
+                            <SkillHeader style={{color: '#405CA0'}}>Client-side</SkillHeader>
+                            <SkillBullet>
+                                <SkillBulletImage src={blueBullet}/>
+                                <SkillBulletText>HTML & CSS</SkillBulletText>
+                            </SkillBullet>
+                            <SkillBullet>
+                                <SkillBulletImage src={blueBullet}/>
+                                <SkillBulletText>Javascript (ES6)</SkillBulletText>
+                            </SkillBullet>
+                            <SkillBullet>
+                                <SkillBulletImage src={blueBullet}/>
+                                <SkillBulletText>React.js</SkillBulletText>
+                            </SkillBullet>
+                        </SkillBox>
+                        <SplitLine style={{gridColumn: '4/5'}}/>
+                        <SkillBox style={{gridColumn: '5/6'}}>
+                            <SkillHeader style={{color: '#3F909E'}}>Server-side</SkillHeader>
+                            <SkillBullet>
+                                <SkillBulletImage src={greenBullet}/>
+                                <SkillBulletText>Node.js</SkillBulletText>
+                            </SkillBullet>
+                            <SkillBullet>
+                                <SkillBulletImage src={greenBullet}/>
+                                <SkillBulletText>Express.js</SkillBulletText>
+                            </SkillBullet>
+                            <SkillBullet>
+                                <SkillBulletImage src={greenBullet}/>
+                                <SkillBulletText>MongoDB</SkillBulletText>
+                            </SkillBullet>
+                        </SkillBox>
+                    </InnerSkillBoxContainer>
+                </SkillBoxContainer>
             </ContentContainer>
         </AboutSection>
     )
