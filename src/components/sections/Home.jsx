@@ -100,7 +100,7 @@ const Home = () => {
                 </GithubContainer>
             </ContentContainer>
         </HomeSection>
-    )
+    );
 }
 
 export default Home;

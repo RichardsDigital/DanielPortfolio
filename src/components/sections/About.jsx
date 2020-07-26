@@ -177,7 +177,7 @@ const About = () => {
                 </SkillBoxContainer>
             </ContentContainer>
         </AboutSection>
-    )
+    );
 }
 
 export default About;
