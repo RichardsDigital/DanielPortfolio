@@ -8,21 +8,21 @@ const WorkSection = styled.section`
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 720px;
     background-color: #212121;
 `
 
 const ContentContainer = styled.section`
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;  
     background-color: none;
-    padding: 240px 0;
-    width: 80%;
+    padding: 0 100px;
 `
 
 const HeaderContainer = styled.div`
-    /* background-color: blue; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -56,6 +56,7 @@ const ProjectBox = styled.div`
     display: grid;
     grid-template-rows: 20% 1fr 20%;
     padding: 16px;
+    margin: 0 10px;
 `
 const ProjectBoxTitle = styled.h2`
     color: white;

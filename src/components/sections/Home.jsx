@@ -2,12 +2,17 @@ import React, { useState } from 'react';
 import githubIcon from '../../images/icons/github.png';
 import styled from 'styled-components';
 
+const NavSpace = styled.div`
+    height: 80px;
+`
+
 const HomeSection = styled.section`
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 720px;
     background-color: #212121;
 `
 
@@ -17,7 +22,7 @@ const ContentContainer = styled.section`
     align-items: center;
     justify-content: center;  
     background-color: none;
-    padding: 240px 0;
+    padding: 0 100px;
 `
 
 const HeaderText = styled.h1`
@@ -86,6 +91,7 @@ const GithubUN = styled.p`
 const Home = () => {
     return (
         <HomeSection>
+        <NavSpace></NavSpace>
             <ContentContainer>
                 <HeaderText>Web Designer and Full Stack Developer</HeaderText>
                 <SubHeaderText>I simply make websites... in a complicated way.</SubHeaderText>

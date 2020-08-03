@@ -7,20 +7,21 @@ const ContactSection = styled.section`
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 720px;
     background-color: #212121;
 `
 
 const ContentContainer = styled.section`
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;  
     background-color: none;
-    padding: 240px 0;
+    padding: 0 100px;
 `
 
 const HeaderContainer = styled.div`
-    /* background-color: blue; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -43,7 +44,7 @@ const HeaderText = styled.h1`
 
 const DescriptionContainer = styled.div`
     margin: 50px 0;
-    width: 42%;
+    width: 450px;
 `
 
 const Paragraph = styled.p`

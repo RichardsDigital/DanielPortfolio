@@ -10,20 +10,21 @@ const AboutSection = styled.section`
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 720px;
     background-color: #212121;
 `
 
 const ContentContainer = styled.section`
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;  
     background-color: none;
-    padding: 240px 0;
+    padding: 0 100px;
 `
 
 const HeaderContainer = styled.div`
-    /* background-color: blue; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -36,7 +37,6 @@ const HeaderLine = styled.div`
 `
 
 const HeaderText = styled.h1`
-    /* background-color: green; */
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
@@ -47,7 +47,7 @@ const HeaderText = styled.h1`
 
 const DescriptionContainer = styled.div`
     margin: 50px 0;
-    width: 60%;
+    width: 600px;
 `
 
 const Paragraph = styled.p`
@@ -61,6 +61,7 @@ const Paragraph = styled.p`
 const SkillBoxContainer = styled.div`
     background-color: #1C1C1C;
     border-radius: 8px;
+    width: 100%;
 `
 
 const InnerSkillBoxContainer = styled.div`
@@ -70,19 +71,20 @@ const InnerSkillBoxContainer = styled.div`
 const SkillBox = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 70px 100px;
+    padding: 70px 0;
 `
 const SkillHeader = styled.div`
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 20px;
     text-align: center;
+    justify-content: center;
     margin-bottom: 30px;
 `
 const SkillBullet = styled.div`
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin:  0 30% 15px 32%;
 `
 const SkillBulletImage = styled.img`
     height: 12px;
